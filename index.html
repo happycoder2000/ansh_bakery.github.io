@@ -1,118 +1,78 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Main Page</title>
+<title>Vanilla Cake</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma">
 <style>
-body,h1,h2,h3,h4,h5,h6 {font-family: "Karma", sans-serif}
-.w3-bar-block .w3-bar-item {padding:20px}
+  body,h1,h2,h3,h4,h5,h6 {font-family: "Karma", sans-serif}
+  .w3-bar-block .w3-bar-item {padding:20px}
+  .w3-top { z-index: 3; }
 </style>
 </head>
 <body>
 
-<nav class="w3-sidebar w3-bar-block w3-card w3-top w3-animate-left w3-white" style="display:none;z-index:2;width:40%;min-width:300px" id="mySidebar">
+<nav class="w3-sidebar w3-bar-block w3-card w3-top w3-animate-left w3-white" style="display:none;z-index:4;width:40%;min-width:300px" id="mySidebar">
   <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-xlarge">× Close</a>
-  <a href="#" onclick="w3_close()" class="w3-bar-item w3-button">Main Page</a>
+  <a href="https://happycoder2000.github.io/ansh_bakery.github.io" onclick="w3_close()" class="w3-bar-item w3-button">Main Page</a>
   <a href="https://happycoder2000.github.io/ansh_bakery.github.io/Chocolate_Cake.html" onclick="w3_close()" class="w3-bar-item w3-button">Chocolate Cake</a>
-  <a href="https://happycoder2000.github.io/ansh_bakery.github.io/Vanilla_Cake.html" onclick="w3_close()" class="w3-bar-item w3-button">Vanilla Cake</a>
-  <a href="#" onclick="w3_close()" class="w3-bar-item w3-button">Milk Cake</a>
-  <a href="#" onclick="w3_close()" class="w3-bar-item w3-button">Ras Malai Cake</a>
-  <a href="#" onclick="w3_close()" class="w3-bar-item w3-button">Ras Malai Cake</a>
-  <a href="#" onclick="w3_close()" class="w3-bar-item w3-button">Vanilla Cupcake</a>
-  <a href="#" onclick="w3_close()" class="w3-bar-item w3-button">Coconut Cake</a>
-  <a href="#" onclick="w3_close()" class="w3-bar-item w3-button">Chocolate Cupcake</a>
+  <a href="#" onclick="w3_close()" class="w3-bar-item w3-button">Vanilla Cake</a>
+  <a href="https://happycoder2000.github.io/ansh_bakery.github.io/Milk_Cake.html" onclick="w3_close()" class="w3-bar-item w3-button">Milk Cake</a>
+  <a href="https://happycoder2000.github.io/ansh_bakery.github.io/RasMalai_Cake.html" onclick="w3_close()" class="w3-bar-item w3-button">Ras Malai Cake</a>
+  <a href="https://happycoder2000.github.io/ansh_bakery.github.io/Vanilla_Cupcake.html" onclick="w3_close()" class="w3-bar-item w3-button">Vanilla Cupcake</a>
+  <a href="https://happycoder2000.github.io/ansh_bakery.github.io/Coconut_Cake.html" onclick="w3_close()" class="w3-bar-item w3-button">Coconut Cake</a>
+  <a href="https://happycoder2000.github.io/ansh_bakery.github.io/Chocolate_Cupcake.html" onclick="w3_close()" class="w3-bar-item w3-button">Chocolate Cupcake</a>
   <a href="https://happycoder2000.github.io/index.html" onclick="w3_close()" class="w3-bar-item w3-button">About the Owner</a>
 </nav>
 
 <div class="w3-top">
-  <div class="w3-white w3-xlarge" style="max-width:1200px;margin:auto">
+  <div class="w3-white w3-xlarge custom-nav">
     <div class="w3-button w3-padding-16 w3-left" onclick="w3_open()">☰</div>
-    <div onclick="window.location.href='https://mail.google.com/mail/u/0/#inbox?compose=CllgCJZZPzQpZbSVgSDDtQCkKPxFKKNLLHnsnWNKJVhqLJKWTFrSnskZQTbWZHsxgpbsBwzlCrg'" class="w3-right w3-padding-16" style="text-decoration: underline; cursor: pointer;">My Mail</div>
-    <div class="w3-center w3-padding-16"><b id="header-text">Our Products</b></div>
+    
+    <div onclick="window.location.href='https://mail.google.com/mail/u/0/#inbox?compose=CllgCJZZPzQpZbSVgSDDtQCkKPxFKKNLLHnsnWNKJVhqLJKWTFrSnskZQTbWZHsxgpbsBwzlCrg'" 
+         class="w3-right w3-padding-16" 
+         style="text-decoration: underline; cursor: pointer;">
+      My Mail
+    </div>
+
+    <div class="w3-center w3-padding-16">
+      <b id="header-text">Vanilla Cake</b>
+    </div>
   </div>
 </div>
-  
-<div class="w3-main w3-content w3-padding" style="max-width:1200px;margin-top:100px">
 
-  <div class="w3-row-padding w3-padding-16 w3-center" id="food">
-    <div class="w3-quarter">
-      <img src="https://www.lifeloveandsugar.com/wp-content/uploads/2014/08/Best-Moist-Chocolate-Cake1-1.jpg" alt="Chocolate Cake" style="width:100%">
-      <h3>Chocolate Cake</h3>
-      <p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+<header class="w3-display-container w3-content w3-wide" style="max-width:1600px; padding-top: 45px;" id="home">
+  <video width="1600" height="800" autoplay muted loop playsinline>
+  <source src="https://www.pexels.com/download/video/7525302/" type="video/mp4">
+</video>
+</header>
+
+<div class="w3-content" style="max-width:1100px">
+
+  <div class="w3-row w3-padding-64" id="about">
+    <div class="w3-col m6 w3-padding-large w3-hide-small">
+     <img src="https://livforcake.com/wp-content/uploads/2017/06/vanilla-cake-4.jpg" class="w3-round w3-image" alt="Cake Detail" width="600" height="750">
     </div>
-    <div class="w3-quarter">
-      <img src="https://livforcake.com/wp-content/uploads/2017/06/vanilla-cake-4.jpg" alt="Vanilla Cake" style="width:100%">
-      <h3>Vanilla Cake</h3>
-      <p>Once again, some random text to lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum.</p>
-    </div>
-    <div class="w3-quarter">
-      <img src="https://www.modernhoney.com/wp-content/uploads/2024/10/Tres-Leches-Cake-18-scaled.jpg" style="width:100%">
-      <h3>Milk Cake</h3>
-      <p>Lorem ipsum text praesent tincidunt ipsum lipsum.</p>
-    </div>
-    <div class="w3-quarter">
-      <img src="https://bakewithshivesh.com/wp-content/uploads/2021/04/IMG_3929-scaled.jpg" alt="Ras Malai Cake" style="width:100%">
-      <h3>Ras Malai Cake</h3>
-      <p>Lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+
+    <div class="w3-col m6 w3-padding-large">
+      <h1 class="w3-center">Order</h1><br>
+      <p class="w3-large">The Catering was founded in blabla by Mr. Smith. Our chocolate cake is made with the finest cocoa and baked fresh daily to ensure a rich, moist experience in every bite.</p>
+      <button type="button" 
+        onclick="window.location.href='mailto:mail.ana54@gmail.com?subject=Cake%20Business&body=A%20customer%20is%20asking%20for%20a%20chocolate%20cake'" 
+        class="w3-button w3-black w3-block w3-padding-large">
+    <b>Add to Cart</b>
+</button>
     </div>
   </div>
-  
-  <div class="w3-row-padding w3-padding-16 w3-center">
-    <div class="w3-quarter">
-      <img src="https://bestofvegancom.b-cdn.net/wp-content/uploads/2025/01/Vegan-Pistachio-Cake-with-Pistachio-Buttercream-39-scaled.webp" alt="Pistachio Cake" style="width:100%">
-      <h3>Pistachio Cake</h3>
-      <p>Lorem ipsum text praesent tincidunt ipsum lipsum.</p>
-    </div>
-    <div class="w3-quarter">
-      <img src="https://sallysbakingaddiction.com/wp-content/uploads/2016/08/homemade-vanilla-cupcakes-with-vanilla-buttercream.jpg" alt="Vanilla Cupcake" style="width:100%">
-      <h3>Vanilla Cupcake</h3>
-      <p>Once again, some random text to lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum.</p>
-    </div>
-    <div class="w3-quarter">
-      <img src="https://sallysbakingaddiction.com/wp-content/uploads/2019/04/coconut-cake-5.jpg" alt="Coconut Cake" style="width:100%">
-      <h3>Coconut Cake</h3>
-      <p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p>
-    </div>
-    <div class="w3-quarter">
-      <img src="https://www.brighteyedbaker.com/wp-content/uploads/2025/04/Chocolate-Fudge-Cupcake-Recipe.jpg" style="width:100%">
-      <h3>Chocolate Cupcake</h3>
-      <p>Lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum.</p>
-    </div>
-  </div>
-
-  <hr id="about">
-
-  <div class="w3-container w3-padding-32 w3-center">
-    <img src="https://www.chefsac.com/cdn/shop/articles/know-thy-chefs-what-are-the-different-types-of-chefs-757427.png?v=1648315571" alt="The Chef" class="w3-image" style="display:block;margin:auto" width="800" height="533">
-    <div class="w3-padding-32">
-      <h6><i>With Passion For Real, Good Food</i></h6>
-      <p>Just me, myself and I, exploring the universe of unknownment. I have a heart of love and an interest of lorem ipsum and mauris neque quam blog.</p>
-    </div>
-  </div>
-  <hr>
 </div>
 
 <script>
-// Script to change header text on scroll
-window.onscroll = function() {
-  var headerText = document.getElementById("header-text");
-  var aboutSection = document.getElementById("about");
-  
-  if (window.pageYOffset >= aboutSection.offsetTop - 100) {
-    headerText.innerHTML = "About our Chef";
-  } else {
-    headerText.innerHTML = "Our Products";
-  }
-};
-
-// Functions to open and close sidebar
 function w3_open() {
   document.getElementById("mySidebar").style.display = "block";
 }
- 
+
 function w3_close() {
   document.getElementById("mySidebar").style.display = "none";
 }
