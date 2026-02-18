@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Chocolate Cake</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+<style>
+  body {font-family: "Karma", Georgia, Serif;}
+  h1, h2, h3, h4, h5, h6 {
+    font-family: "Playfair Display", serif;
+    letter-spacing: 5px;
+    margin: 0; /* Prevents unwanted spacing in the header */
+  }
+  /* Keeps the top bar clean and readable */
+  .w3-top { z-index: 3; }
+</style>
+</head>
+<body>
+
+<nav class="w3-sidebar w3-bar-block w3-card w3-top w3-animate-left w3-white" style="display:none;z-index:4;width:40%;min-width:300px" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-xlarge">× Close</a>
+  <a href="#" onclick="w3_close()" class="w3-bar-item w3-button">Main Page</a>
+  <a href="#" onclick="w3_close()" class="w3-bar-item w3-button">Chocolate Cake</a>
+  <a href="#" onclick="w3_close()" class="w3-bar-item w3-button">Vanilla Cake</a>
+  <a href="#" onclick="w3_close()" class="w3-bar-item w3-button">Milk Cake</a>
+  <a href="#" onclick="w3_close()" class="w3-bar-item w3-button">Ras Malai Cake</a>
+  <a href="#" onclick="w3_close()" class="w3-bar-item w3-button">Vanilla Cupcake</a>
+  <a href="#" onclick="w3_close()" class="w3-bar-item w3-button">Coconut Cake</a>
+  <a href="#" onclick="w3_close()" class="w3-bar-item w3-button">Chocolate Cupcake</a>
+  <a href="https://happycoder2000.github.io/index.html" onclick="w3_close()" class="w3-bar-item w3-button">About the Owner</a>
+</nav>
+
+<div class="w3-top">
+  <div class="w3-white w3-xlarge" style="max-width:1200px;margin:auto">
+    <div class="w3-button w3-padding-16 w3-left" onclick="w3_open()">☰</div>
+    <div onclick="window.location.href='https://mail.google.com/mail/u/0/#inbox?compose=CllgCJZZPzQpZbSVgSDDtQCkKPxFKKNLLHnsnWNKJVhqLJKWTFrSnskZQTbWZHsxgpbsBwzlCrg'" class="w3-right w3-padding-16" style="text-decoration: underline; cursor: pointer;">My Mail</div>
+    <div class="w3-center w3-padding-16"><b id="header-text">Chocolate Cake</b></div>
+  </div>
+</div>
+
+<header class="w3-display-container w3-content w3-wide" style="max-width:1600px; padding-top: 64px;" id="home">
+  <img class="w3-image" src="https://ichef.bbc.co.uk/ace/standard/1600/food/recipes/easy_chocolate_cake_31070_16x9.jpg.webp" alt="Chocolate Cake" width="1600" height="800">
+</header>
+
+<div class="w3-content" style="max-width:1100px">
+
+  <div class="w3-row w3-padding-64" id="about">
+    <div class="w3-col m6 w3-padding-large w3-hide-small">
+     <img src="https://www.lifeloveandsugar.com/wp-content/uploads/2014/08/Best-Moist-Chocolate-Cake1-1.jpg" class="w3-round w3-image" alt="Table Setting" width="600" height="750">
+    </div>
+
+    <div class="w3-col m6 w3-padding-large">
+      <h1 class="w3-center">Order</h1><br>
+      <p class="w3-large">The Catering was founded in blabla by Mr. Smith. Our chocolate cake is made with the finest cocoa and baked fresh daily to ensure a rich, moist experience in every bite.</p>
+      <button type="button" onclick="alert('1 chocolate cake has been added to your cart')" class="w3-button w3-black w3-section"><b>Add to Cart</b></button>
+    </div>
+  </div>
+</div>
+
+<script>
+// Logic to open/close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+}
+
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+</script>
+
+</body>
+</html>
