@@ -31,16 +31,8 @@
 <div class="w3-top">
   <div class="w3-white w3-xlarge custom-nav">
     <div class="w3-button w3-padding-16 w3-left" onclick="w3_open()">☰</div>
-    
-    <div onclick="window.location.href='https://mail.google.com/mail/u/0/#inbox?compose=CllgCJZZPzQpZbSVgSDDtQCkKPxFKKNLLHnsnWNKJVhqLJKWTFrSnskZQTbWZHsxgpbsBwzlCrg'" 
-         class="w3-right w3-padding-16" 
-         style="text-decoration: underline; cursor: pointer;">
-      My Mail
-    </div>
-
-    <div class="w3-center w3-padding-16">
-      <b id="header-text">Chocolate Cake</b>
-    </div>
+    <div class="w3-right w3-padding-16" style="text-decoration: underline; cursor: pointer;">My Mail</div>
+    <div class="w3-center w3-padding-16"><b id="header-text">Chocolate Cake</b></div>
   </div>
 </div>
 
@@ -51,7 +43,6 @@
 </header>
 
 <div class="w3-content" style="max-width:1100px">
-
   <div class="w3-row w3-padding-64" id="about">
     <div class="w3-col m6 w3-padding-large w3-hide-small">
      <img src="https://www.lifeloveandsugar.com/wp-content/uploads/2014/08/Best-Moist-Chocolate-Cake1-1.jpg" class="w3-round w3-image" alt="Cake Detail" width="600" height="750">
@@ -60,22 +51,32 @@
     <div class="w3-col m6 w3-padding-large">
       <h1 class="w3-center">Order</h1><br>
       <p class="w3-large">The Catering was founded in blabla by Mr. Smith. Our chocolate cake is made with the finest cocoa and baked fresh daily to ensure a rich, moist experience in every bite.</p>
-      <button type="button" 
-        onclick="window.location.href='mailto:mail.ana54@gmail.com?subject=Cake%20Business&body=A%20customer%20is%20asking%20for%20a%20chocolate%20cake'" 
-        class="w3-button w3-black w3-block w3-padding-large">
-    <b>Add to Cart</b>
-</button>
+      <button type="button" onclick="validatePhone()" class="w3-button w3-black w3-block w3-padding-large"><b>Add to Cart</b></button>
     </div>
   </div>
 </div>
 
 <script>
-function w3_open() {
-  document.getElementById("mySidebar").style.display = "block";
-}
+function w3_open() { document.getElementById("mySidebar").style.display = "block"; }
+function w3_close() { document.getElementById("mySidebar").style.display = "none"; }
 
-function w3_close() {
-  document.getElementById("mySidebar").style.display = "none";
+function validatePhone() {
+  // 1. Ask for the number and specify the format
+  let phoneNumber = prompt("Please enter your phone number (Format: 10 digits, e.g., 1234567890):");
+
+  // 2. Check if the user clicked cancel
+  if (phoneNumber === null) return;
+
+  // 3. Check if the format is correct (must be exactly 10 digits)
+  // This "regex" checks for exactly 10 numbers only
+  let phonePattern = /^\d{10}$/;
+
+  if (phonePattern.test(phoneNumber)) {
+    alert("Thank you, we have recieved your order.");
+  } else {
+    alert("Invalid format. Please enter exactly 10 digits with no spaces or dashes.");
+    validatePhone(); // Re-opens the prompt if the format was wrong
+  }
 }
 </script>
 
